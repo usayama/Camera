@@ -18,19 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32k-a7-OQU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32k-a7-OQU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJ0-43-pcO">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJ0-43-pcO">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem systemItem="camera" id="6Ty-lK-h3o"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lJ0-43-pcO" firstAttribute="bottom" secondItem="32k-a7-OQU" secondAttribute="bottom" id="67f-79-ilS"/>
+                            <constraint firstItem="32k-a7-OQU" firstAttribute="trailing" secondItem="lJ0-43-pcO" secondAttribute="trailing" id="89A-ae-Bw3"/>
+                            <constraint firstItem="32k-a7-OQU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FZY-xs-syT"/>
+                            <constraint firstItem="32k-a7-OQU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M9w-8Q-e4P"/>
+                            <constraint firstItem="32k-a7-OQU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RAr-vW-dOz"/>
+                            <constraint firstAttribute="trailing" secondItem="32k-a7-OQU" secondAttribute="trailing" id="uHf-od-o93"/>
+                            <constraint firstItem="32k-a7-OQU" firstAttribute="leading" secondItem="lJ0-43-pcO" secondAttribute="leading" id="uux-j4-qKR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
